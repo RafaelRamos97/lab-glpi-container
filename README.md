@@ -12,26 +12,30 @@ Antes de começar, certifique-se de ter o Docker e o Docker Compose instalados n
 
    ```bash
    git clone https://github.com/RafaelRamos97/lab-glpi-container.git
-   
-2. Transforme o script glpi.sh em um arquivo executavel
+
+2. Acesse a o repositorio:
+   ```bash
+   cd lab-glpi-container
+      
+4. Após acessar o repositorio transforme o script glpi.sh em um arquivo executavel com este comando:
    ```bash
    chmod +x glpi.sh
 
-3. Em seguita acione o script com o seguinte comando:
+5. Em seguita acione o script com o seguinte comando:
    ```bash
    ./glpi.sh
 
-4 . Após o script finalizar você vai se deparar com a ultima etapa para a configuração do banco do glpi...
+5 . Após o script finalizar você vai se deparar com a ultima etapa para a configuração do banco do glpi...
 
 Confirme com "Y" / "y" ou "yes" sobre as configurações do banco
 
 <img width="893" alt="Passo 1" src="https://github.com/RafaelRamos97/lab-glpi-container/assets/49218736/ef19ae14-e44c-4bd0-9510-526c31900a9d">
 
-5 . Confime com "Y" ou "n" caso queira compartilhar dados de statisticas com a equipe do GLPI.
+6 . Confime com "Y" ou "n" caso queira compartilhar dados de statisticas com a equipe do GLPI.
 
 <img width="941" alt="Passo 2" src="https://github.com/RafaelRamos97/lab-glpi-container/assets/49218736/5065dbff-febc-447b-bf7e-759af6aa6b65">
 
-6. Acesse o navegador e seja feliz :D
+7. Acesse o navegador e seja feliz :D
    ````bash
    http://localhost:8082/
 
