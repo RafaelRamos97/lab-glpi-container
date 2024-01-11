@@ -24,9 +24,11 @@ Antes de começar, certifique-se de ter o Docker e o Docker Compose instalados n
 4 . Após o script finalizar você vai se deparar com a ultima etapa para a configuração do banco do glpi...
 
 Confirme com "Y" / "y" ou "yes" sobre as configurações do banco
+
 <img width="893" alt="Passo 1" src="https://github.com/RafaelRamos97/lab-glpi-container/assets/49218736/ef19ae14-e44c-4bd0-9510-526c31900a9d">
 
 5 . Confime com "Y" ou "n" caso queira compartilhar dados de statisticas com a equipe do GLPI.
+
 <img width="941" alt="Passo 2" src="https://github.com/RafaelRamos97/lab-glpi-container/assets/49218736/5065dbff-febc-447b-bf7e-759af6aa6b65">
 
 
