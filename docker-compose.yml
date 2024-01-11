@@ -1,0 +1,37 @@
+version: '3'
+
+services:
+  glpi:
+    image: elestio/glpi:latest
+    container_name: glpi
+    restart: always
+    ports:
+      - "8082:80"
+    environment:
+      - GLPI_DB_HOST=192.168.108.172
+      - GLPI_DB_NAME=glpidb
+      - GLPI_DB_USER=glpi
+      - GLPI_DB_PASSWORD=123456
+    depends_on:
+      - mysql
+    volumes:
+      - glpi_data:/var/www/html/glpi
+
+  mysql:
+    image: mysql:5.7
+    container_name: mysql-glpi
+    environment:
+      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_DATABASE: glpidb
+      MYSQL_USER: glpi
+      MYSQL_PASSWORD: 123
+    volumes:
+      - mysql_data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+
+volumes:
+  mysql_data:
+  glpi_data:
+   
+
