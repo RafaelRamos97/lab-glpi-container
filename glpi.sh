@@ -23,18 +23,18 @@ echo "Aguardando a criação do volume docker do GLPI"
 sleep 60
 
 # Caminho para o arquivo console
-CONSOLE_FILE="/var/lib/docker/volumes/docker-compose_glpi_data/_data/bin/console"
+CONSOLE_FILE="/var/lib/docker/volumes/lab-glpi-container_glpi_data/_data/bin/console"
 
 # Configurar permissões no diretório
-chown www-data. /var/lib/docker/volumes/docker-compose_glpi_data/_data -Rf
-find /var/lib/docker/volumes/docker-compose_glpi_data/_data -type d -exec chmod 755 {} \;
-find /var/lib/docker/volumes/docker-compose_glpi_data/_data -type f -exec chmod 644 {} \;
+chown www-data. /var/lib/docker/volumes/lab-glpi-container_glpi_data/_data -Rf
+find /var/lib/docker/volumes/lab-glpi-container_glpi_data/_data -type d -exec chmod 755 {} \;
+find /var/lib/docker/volumes/lab-glpi-container_glpi_data/_data -type f -exec chmod 644 {} \;
 
 
 # Executar o comando php com as informações extraídas
-cd /var/lib/docker/volumes/docker-compose_glpi_data/_data/bin
+cd /var/lib/docker/volumes/lab-glpi-container_glpi_data/_data/bin
 php "$CONSOLE_FILE" glpi:database:install --db-host="$DB_HOST" --db-name="$DB_NAME" --db-user=root --db-password=admin
 
 # Reajustar permissões
-chown www-data. /var/lib/docker/volumes/docker-compose_glpi_data/_data -Rf
+chown www-data. /var/lib/docker/volumes/lab-glpi-container_glpi_data/_data -Rf
 
