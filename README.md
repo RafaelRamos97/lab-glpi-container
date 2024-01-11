@@ -1,6 +1,6 @@
 # Instalação Automática do GLPI com Docker
 
-Este repositório contém um script para automatizar a criação e configuração do GLPI para um ambiente Docker, proporcionando uma instalação e configura fácil e rápida.
+Este repositório foi realizado na intenção de estudar sobre docker e linux, o mesmo contém um script para automatizar a criação e configuração do GLPI para um ambiente Docker, proporcionando uma instalação e configura fácil e rápida.
 
 ## Pré-requisitos
 
@@ -30,8 +30,6 @@ Confirme com "Y" / "y" ou "yes" sobre as configurações do banco
 5 . Confime com "Y" ou "n" caso queira compartilhar dados de statisticas com a equipe do GLPI.
 
 <img width="941" alt="Passo 2" src="https://github.com/RafaelRamos97/lab-glpi-container/assets/49218736/5065dbff-febc-447b-bf7e-759af6aa6b65">
-
-
 
 6. Acesse o navegador e seja feliz :D
    ````bash
