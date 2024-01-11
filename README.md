@@ -13,10 +13,10 @@ Antes de começar, certifique-se de ter o Docker e o Docker Compose instalados n
    ```bash
    git clone https://github.com/RafaelRamos97/lab-glpi-container.git
    
-transforme o script glpi.sh em um arquivo executavel
-
+2. Transforme o script glpi.sh em um arquivo executavel
+   ```bash
    chmod +x glpi.sh
 
-Em seguita acione o script com o seguinte comando:
-
+3. Em seguita acione o script com o seguinte comando:
+   ```bash
    ./glpi.sh
